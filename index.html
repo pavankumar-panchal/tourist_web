@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinity Explorers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <style>
+    .shadow-for-text {
+      position: relative;
+    }
+
+    .shadow-for-text .carousel-inner {
+      text-align: center;
+    }
+
+    .shadow-for-text .carousel-item img {
+      width: 150rem;
+      height: 650px;
+    }
+
+    .shadow-for-text .text-with-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .service-item {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-item h3 {
+      color: #007bff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .service-item p {
+      font-size: 16px;
+      color: #6c757d;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://image.similarpng.com/very-thumbnail/2021/05/Infinity-Symbol-Logo-on-transparent-background-PNG.png"
+            alt="Infinity Explorers" width="80" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Packages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">United States</a></li>
+                <li><a class="dropdown-item" href="#">India</a></li>
+                <li><a class="dropdown-item" href="#">France</a></li>
+                <li><a class="dropdown-item" href="#">Germany</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-warning me-3 text-white">Login</button>
+            <button class="btn btn-warning text-white">Register</button>
+          </div>
+          <form class="d-flex ms-3">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning text-white" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div>
+    <section class="shadow-for-text">
+      <div id="carouselExampleAutoplaying" class="carousel slide position-absolute" data-bs-ride="carousel"
+        data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.thrillophilia.com/image/upload/s--ii9zTCYD--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/013/595/original/Mysore-Flickr.jpg.jpg?1458192645"
+              class="img-fluid" alt="India">
+            <div class="gradient-overlay"></div>
+            <div class="top-50 start-50 translate-middle text-center position-absolute">
+              <h2 class="text-white shadow-lg z-2 text-with-shadow">
+                Welcome To Infinity Explorers
+              </h2>
+              <h1 class="text-white text-with-shadow">
+                Visit <span class="text-warning text-with-shadow">India</span>
+              </h1>
+              <p class="text-white shadow-lg">
+                "Incredible India: Unveil the secrets of ancient civilizations."
+              </p>
+              <button class="btn btn-warning text-white">Book Place</button>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1525789351284-e1e7de240152?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dW5zcGxhc2h8ZW58MHx8MHx8fDA%3D"
+              class="img-fluid" alt="Another Destination">
+            <div class="gradient-overlay"></div>
+            <div class="top-50 start-50 translate-middle text-center position-absolute">
+              <h2 class="text-white shadow-lg z-2 text-with-shadow">
+                Welcome To Infinity Explorers
+              </h2>
+              <h1 class="text-white text-with-shadow">
+                Visit <span class="text-warning text-with-shadow">Another Destination</span>
+              </h1>
+              <p class="text-white shadow-lg">
+                "Discover the beauty of Another Destination."
+              </p>
+              <button class="btn btn-warning text-white">Book Place</button>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dW5zcGxhc2h8ZW58MHx8MHx8fDA%3D"
+              class="img-fluid" alt="Yet Another Destination">
+            <div class="gradient-overlay"></div>
+            <div class="top-50 start-50 translate-middle text-center position-absolute">
+              <h2 class="text-white shadow-lg z-2 text-with-shadow">
+                Welcome To Infinity Explorers
+              </h2>
+              <h1 class="text-white text-with-shadow">
+                Visit <span class="text-with-shadow text-warning">Yet Another Destination</span>
+              </h1>
+              <p class="text-white shadow-lg">
+                "Explore the wonders of Yet Another Destination."
+              </p>
+              <button class="btn btn-warning text-white">Book Place</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+  </div>
+
+
+
+
+  <div class="container rounded" style="margin-top: 93vh;">
+    <!-- Section A: Image and Form -->
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="https://images.pexels.com/photos/13633065/pexels-photo-13633065.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;lazy=load"
+          alt="image" class="img-fluid" style="height: 600px; width: 600px;">
+      </div>
+
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="whereTo" class="form-label">Where to:</label>
+            <select name="whereTo" class="form-select" fdprocessedid="ztfy7c">
+              <option value="">Select Country to Visit</option>
+              <option value="japan">Japan</option>
+              <option value="unitedStates">United States</option>
+              <!-- Other options -->
+            </select>
+            <span></span>
+          </div>
+
+          <div class="mb-3">
+            <label for="persons" class="form-label">How Many Person:</label>
+            <input type="number" name="persons" class="form-control" value="" required="" fdprocessedid="ylt9h">
+            <span></span>
+          </div>
+
+          <div class="mb-3">
+            <label for="startDate" class="form-label">Start Date:</label>
+            <input type="date" name="startDate" class="form-control" value="" required="">
+            <span></span>
+          </div>
+
+          <div class="mb-3">
+            <label for="endDate" class="form-label">End Date:</label>
+            <input type="date" name="endDate" class="form-control" value="" required="">
+            <span></span>
+          </div>
+
+          <div class="mb-3" data-quillbot-parent="MABht9si-xpeJOZWNlrwQ">
+            <label for="description" class="form-label">Description:</label>
+            <quillbot-extension-highlights data-element-id="MABht9si-xpeJOZWNlrwQ" data-element-type="text"
+              style="position: relative; top: 0px; left: 0px; z-index: 1 !important; pointer-events: none;"></quillbot-extension-highlights>
+            <textarea name="description" class="form-control" aria-valuetext="" rows="5" minlength="50" maxlength="500"
+              required="" data-gramm="false" wt-ignore-input="true"
+              data-quillbot-element="MABht9si-xpeJOZWNlrwQ"></textarea>
+            <span></span>
+          </div>
+
+          <button type="submit" class="btn btn-warning">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow" style="height: 100%;">
+          <img
+            src="https://images.pexels.com/photos/2748019/pexels-photo-2748019.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Italy" class="card-img-top p-3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Italy</h5>
+            <p class="card-text">Italy is a great place to visit.</p>
+            <p class="card-text">Price - $300</p>
+            <p class="card-text">Rating - 4.7</p>
+            <button class="btn btn-warning w-50">Book</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow" style="height: 100%;">
+          <img
+            src="https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Singapore" class="card-img-top p-3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Singapore</h5>
+            <p class="card-text">Singapore is a great place to visit.</p>
+            <p class="card-text">Price - $200</p>
+            <p class="card-text">Rating - 4.9</p>
+            <button class="btn btn-warning w-50">Book</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow" style="height: 100%;">
+          <img
+            src="https://images.pexels.com/photos/707677/pexels-photo-707677.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Japan" class="card-img-top p-3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Japan</h5>
+            <p class="card-text">Japan is a great place to visit.</p>
+            <p class="card-text">Price - $300</p>
+            <p class="card-text">Rating - 4.7</p>
+            <button class="btn btn-warning w-50">Book</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow" style="height: 100%;">
+          <img
+            src="https://images.pexels.com/photos/2748019/pexels-photo-2748019.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Italy" class="card-img-top p-3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Italy</h5>
+            <p class="card-text">Italy is a great place to visit.</p>
+            <p class="card-text">Price - $300</p>
+            <p class="card-text">Rating - 4.7</p>
+            <button class="btn btn-warning w-50">Book</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow" style="height: 100%;">
+          <img
+            src="https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Singapore" class="card-img-top p-3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Singapore</h5>
+            <p class="card-text">Singapore is a great place to visit.</p>
+            <p class="card-text">Price - $200</p>
+            <p class="card-text">Rating - 4.9</p>
+            <button class="btn btn-warning w-50">Book</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow" style="height: 100%;">
+          <img
+            src="https://images.pexels.com/photos/707677/pexels-photo-707677.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Japan" class="card-img-top p-3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Japan</h5>
+            <p class="card-text">Japan is a great place to visit.</p>
+            <p class="card-text">Price - $300</p>
+            <p class="card-text">Rating - 4.7</p>
+            <button class="btn btn-warning w-50">Book</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar structure for other destinations -->
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service-item">
+          <h3>Affordable Hotel</h3>
+          <p>Booking and reservation services for hotels, resorts, lodges, and vacation rentals</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-item">
+          <h3>Food & Drinks</h3>
+          <p>Engage travelers in interactive and educational experiences related to food and beverages</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-item">
+          <h3>Safety Guide</h3>
+          <p>Be aware of your surroundings and trust your instincts</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-4 ">
+        <div class="service-item">
+          <h3>Travel Insurance</h3>
+          <p>Offer travel insurance options to ensure travelers' safety and security during their trips</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-item">
+          <h3>Transportation Assistance</h3>
+          <p>Arrangement of airport transfers, car rentals, and transportation between destinations</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-item">
+          <h3>Wellness & Spa</h3>
+          <p>Wellness retreats and spa for relaxation and rejuvenation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2023. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
