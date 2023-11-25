@@ -47,14 +47,6 @@
       color: #6c757d;
       line-height: 1.6;
     }
-
-    footer {
-      margin-top: 20px;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
   </style>
 </head>
 
@@ -205,14 +197,16 @@
       </div>
 
       <div class="col-md-6">
-        <form>
+
+        <form id="bookingForm">
           <div class="mb-3">
             <label for="whereTo" class="form-label">Where to:</label>
             <select name="whereTo" class="form-select" fdprocessedid="ztfy7c">
               <option value="">Select Country to Visit</option>
-              <option value="japan">Japan</option>
               <option value="unitedStates">United States</option>
-              <!-- Other options -->
+              <option value="India">India</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
             </select>
             <span></span>
           </div>
@@ -237,14 +231,10 @@
 
           <div class="mb-3" data-quillbot-parent="MABht9si-xpeJOZWNlrwQ">
             <label for="description" class="form-label">Description:</label>
-            <quillbot-extension-highlights data-element-id="MABht9si-xpeJOZWNlrwQ" data-element-type="text"
-              style="position: relative; top: 0px; left: 0px; z-index: 1 !important; pointer-events: none;"></quillbot-extension-highlights>
-            <textarea name="description" class="form-control" aria-valuetext="" rows="5" minlength="50" maxlength="500"
-              required="" data-gramm="false" wt-ignore-input="true"
-              data-quillbot-element="MABht9si-xpeJOZWNlrwQ"></textarea>
+            <textarea name="description" class="form-control" aria-valuetext="" rows="5" required=""
+              wt-ignore-input="true"></textarea>
             <span></span>
           </div>
-
           <button type="submit" class="btn btn-warning">Book Now</button>
         </form>
       </div>
@@ -253,71 +243,70 @@
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card shadow" style="height: 100%;">
+      <div class="col-md-3">
+        <div class="card " style="height: 100%;">
           <img
             src="https://images.pexels.com/photos/2748019/pexels-photo-2748019.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
             alt="Italy" class="card-img-top p-3">
           <div class="card-body text-center">
-            <h5 class="card-title">Italy</h5>
-            <p class="card-text">Italy is a great place to visit.</p>
+            <h5 class="card-title">United States</h5>
+            <p class="card-text">United States is a great place to visit.</p>
             <p class="card-text">Price - $300</p>
             <p class="card-text">Rating - 4.7</p>
-            <button class="btn btn-warning w-50" onclick="showAlert()">Book</button>
+            <button class="btn btn-warning w-50" onclick="showAlert('united States')">Book</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card shadow" style="height: 100%;">
+      <div class="col-md-3">
+        <div class="card " style="height: 100%;">
           <img
             src="https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
             alt="Singapore" class="card-img-top p-3">
           <div class="card-body text-center">
-            <h5 class="card-title">Singapore</h5>
-            <p class="card-text">Singapore is a great place to visit.</p>
+            <h5 class="card-title">India</h5>
+            <p class="card-text">India is a great place to visit.</p>
             <p class="card-text">Price - $200</p>
             <p class="card-text">Rating - 4.9</p>
-            <button class="btn btn-warning w-50" onclick="showAlert()">Book</button>
+            <button class="btn btn-warning w-50" onclick="showAlert('India')">Book</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card shadow" style="height: 100%;">
+      <div class="col-md-3">
+        <div class="card " style="height: 100%;">
           <img
             src="https://images.pexels.com/photos/707677/pexels-photo-707677.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
             alt="Japan" class="card-img-top p-3">
           <div class="card-body text-center">
-            <h5 class="card-title">Japan</h5>
-            <p class="card-text">Japan is a great place to visit.</p>
+            <h5 class="card-title">France</h5>
+            <p class="card-text">France is a great place to visit.</p>
             <p class="card-text">Price - $300</p>
             <p class="card-text">Rating - 4.7</p>
-            <button class="btn btn-warning w-50" onclick="showAlert()">Book</button>
+            <button class="btn btn-warning w-50" onclick="showAlert('France')">Book</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card shadow" style="height: 100%;">
+      <div class="col-md-3">
+        <div class="card " style="height: 100%;">
           <img
-            src="https://images.pexels.com/photos/2748019/pexels-photo-2748019.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
-            alt="Italy" class="card-img-top p-3">
+            src="https://images.pexels.com/photos/707677/pexels-photo-707677.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Japan" class="card-img-top p-3">
           <div class="card-body text-center">
-            <h5 class="card-title">Italy</h5>
-            <p class="card-text">Italy is a great place to visit.</p>
+            <h5 class="card-title">Germany</h5>
+            <p class="card-text">Germany is a great place to visit.</p>
             <p class="card-text">Price - $300</p>
             <p class="card-text">Rating - 4.7</p>
-            <button class="btn btn-warning w-50" onclick="showAlert()">Book</button>
+            <button class="btn btn-warning w-50" onclick="showAlert('Germany')">Book</button>
           </div>
         </div>
       </div>
-     
-      <!-- Repeat similar structure for other destinations -->
     </div>
   </div>
 
 
-
-
-  <div class="container">
+  <div class="services mt-5">
+    <h3 style="text-align: center;">Services</h3>
+  </div>
+  <div class="container mt-3">
     <div class="row">
       <div class="col-md-4">
         <div class="service-item">
@@ -359,11 +348,28 @@
       </div>
     </div>
   </div>
+  <script>
+    function showAlert(destination) {
+      alert(`Booking confirmed for ${destination}`);
+    }
 
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+  
+      const form = event.target;
+      const whereTo = form.elements['whereTo'].value;
+      const persons = form.elements['persons'].value;
+      const startDate = form.elements['startDate'].value;
+      const endDate = form.elements['endDate'].value;
+      const description = form.elements['description'].value;
+  
+      let message = "Booking Details:\n";
+      message += "Destination: " + whereTo + "\n";
+      alert(message);
+    });
 
-  <footer>
-    <p>&copy; 2023. All Rights Reserved.</p>
-  </footer>
+  </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
