@@ -32,9 +32,6 @@
       transition: transform 0.3s ease-in-out;
     }
 
-    .service-item:hover {
-      transform: translateY(-5px);
-    }
 
     .service-item h3 {
       color: #101011;
@@ -191,8 +188,7 @@
     <!-- Section A: Image and Form -->
     <div class="row">
       <div class="col-md-6">
-        <img
-          src="https://images.pexels.com/photos/13633065/pexels-photo-13633065.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;lazy=load"
+        <img src="https://www.bhmpics.com/downloads/world-map-wallpaper-hd/1.9deb08cbac490f5fa43032499f61c581.jpg"
           alt="image" class="img-fluid" style="height: 600px; width: 600px;">
       </div>
 
@@ -246,8 +242,9 @@
       <div class="col-md-3">
         <div class="card " style="height: 100%;">
           <img
-            src="https://images.pexels.com/photos/2748019/pexels-photo-2748019.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
-            alt="Italy" class="card-img-top p-3">
+            src="https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Singapore" class="card-img-top p-3">
+
           <div class="card-body text-center">
             <h5 class="card-title">United States</h5>
             <p class="card-text">United States is a great place to visit.</p>
@@ -260,8 +257,8 @@
       <div class="col-md-3">
         <div class="card " style="height: 100%;">
           <img
-            src="https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
-            alt="Singapore" class="card-img-top p-3">
+            src="https://images.pexels.com/photos/2748019/pexels-photo-2748019.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+            alt="Italy" class="card-img-top p-3">
           <div class="card-body text-center">
             <h5 class="card-title">India</h5>
             <p class="card-text">India is a great place to visit.</p>
@@ -287,8 +284,7 @@
       </div>
       <div class="col-md-3">
         <div class="card " style="height: 100%;">
-          <img
-            src="https://images.pexels.com/photos/707677/pexels-photo-707677.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+          <img src="https://cdn.britannica.com/49/179449-138-9F4EC401/Overview-Berlin.jpg?w=800&h=450&c=crop"
             alt="Japan" class="card-img-top p-3">
           <div class="card-body text-center">
             <h5 class="card-title">Germany</h5>
@@ -353,16 +349,16 @@
       alert(`Booking confirmed for ${destination}`);
     }
 
-    document.getElementById('bookingForm').addEventListener('submit', function(event) {
-      event.preventDefault(); 
-  
+    document.getElementById('bookingForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
       const form = event.target;
       const whereTo = form.elements['whereTo'].value;
       const persons = form.elements['persons'].value;
       const startDate = form.elements['startDate'].value;
       const endDate = form.elements['endDate'].value;
       const description = form.elements['description'].value;
-  
+
       let message = "Booking Details:\n";
       message += " Your package has been booked successfully for " + whereTo + "\n";
       alert(message);
